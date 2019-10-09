@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [test Suite]">
+  <test thread-count="5" name="Gmail Test Assessment(failed)">
+    <classes>
+      <class name="TestCases.SendMailFromGmailTest">
+        <methods>
+          <include name="LoginToGmail"/>
+          <include name="OpenMailAndMarkAsStarred"/>
+          <include name="startDriver"/>
+          <include name="SendSocialEmail"/>
+          <include name="CheckBodyAndSubjectForTheSocialEmailRecieved"/>
+        </methods>
+      </class> <!-- TestCases.SendMailFromGmailTest -->
+    </classes>
+  </test> <!-- Gmail Test Assessment(failed) -->
+</suite> <!-- Failed suite [test Suite] -->

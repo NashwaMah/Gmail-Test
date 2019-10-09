@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="test Suite">
+    <test name="Gmail Test Assessment" preserve-order="true">
+        <classes>
+
+
+            <!--testcases-->
+            <class name="TestCases.SendMailFromGmailTest">
+             <methods>
+                <include name="LoginToGmail" />
+                <include name="SendSocialEmail" />
+                 <include name="OpenMailAndMarkAsStarred" />
+                 <include name="CheckBodyAndSubjectForTheSocialEmailRecieved" />
+            </methods>
+            
+            </class>
+
+        </classes>
+    </test>
+</suite>
